@@ -46,33 +46,33 @@ export const HOME: HomePageParams = {
 	name: 'Name',
 	lastName: 'LASTNAME',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		'Hello there, I\'m Andy. A Web Developer with an Engineering background who is excited about building Web applications that will benefit the masses, similar to how technology has improved our lives over the past decade.',
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
+		{ platform: Platform.GitHub, link: 'https://github.com/geekHarp' },
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
+			link: 'https://www.linkedin.com/in/andyngboonhou/'
 		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
-		},
+		// {
+		// 	platform: Platform.Twitter,
+		// 	link: 'https://twitter.com/'
+		// },
+		// {
+		// 	platform: Platform.StackOverflow,
+		// 	link: 'https://stackoverflow.com/'
+		// },
 		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
+			link: 'ngbhandy@gmail.com'
 		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
-		}
+		// {
+		// 	platform: Platform.Youtube,
+		// 	link: 'https://www.youtube.com'
+		// },
+		// {
+		// 	platform: Platform.Facebook,
+		// 	link: 'https://www.facebook.com'
+		// }
 	]
 };
 

@@ -9,14 +9,14 @@ const MY_PROJECTS: Array<Project> = [
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			'A Job Portal where Job seekers can create/manage their profiles, search and apply for jobs. Made with Next.js.',
+		links: [{ to: 'https://findjobs.asia', label: 'Job Portal' }],
 		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+		name: 'Findjobs Job Portal',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
+		skills: getSkills('ts', 'bootstrap'),
 		type: 'Website Template'
 	},
 	{
@@ -25,14 +25,14 @@ const MY_PROJECTS: Array<Project> = [
 		description:
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			'An Employer Dashboard where employers can post job openings, review applicant profiles and streamline the hiring process. A React app integrated with Express backend, Hasura (GraphQL), etc.',
+		links: [{ to: 'https://dashboard.findjobs.asia', label: 'Employer Dashboard' }],
 		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+		name: 'Findjobs Employer Dashboard',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
+		skills: getSkills('js', 'reactjs', 'nodejs', 'expressjs', 'postgresql'),
 		type: 'Website Template',
 		screenshots: [
 			{
@@ -60,6 +60,22 @@ const MY_PROJECTS: Array<Project> = [
 				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 			}
 		]
+	},
+	{
+		slug: 'slick-portfolio-angular',
+		color: '#5e95e3',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Test your ability in recognizing Scrambled word or play a game of Hangman with friends with Guess the WORDs. This project is written using pure HTML, CSS and Javascript for DOM Manipulation.',
+		links: [{ to: 'https://geekharp.github.io/word-guessing-game/', label: 'Word Guessing Game' }],
+		logo: Assets.Unknown,
+		name: 'Guess the WORDs',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('html', 'css', 'js'),
+		type: 'Website Template'
 	}
 ];
 

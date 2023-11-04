@@ -6,15 +6,12 @@
 	export let inverted = false;
 	export let grayscale = true;
 
-	export let href: string | undefined = undefined;
+	// export let href: string | undefined = undefined;
 </script>
 
 <svelte:element
-	this={href ? 'a' : 'div'}
-	{href}
-	class={`chip-icon row-center relative text-inherit decoration-none p-10px m-r-5px m-b-5px border-1px border-solid border-[var(--border)] hover:border-[var(--border-hover)] rounded-10px ${
-		href ? 'cursor-pointer' : 'cursor-help'
-	} ${grayscale ? 'grayscale-65 hover:grayscale-0' : ''}`}
+	this={'div'}
+	class={`chip-icon row-center relative text-inherit decoration-none p-10px m-r-5px m-b-5px border-1px border-solid border-[var(--border)] hover:border-[var(--border-hover)] rounded-10px cursor-default ${grayscale ? 'grayscale-65 hover:grayscale-0' : ''}`}
 	data-help={name}
 >
 	{#if $$slots.default}

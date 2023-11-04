@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { HOME, NavBar } from '$lib/params';
+	import { NavBar } from '$lib/params';
 	import { theme, toggleTheme } from '$lib/stores/theme';
 
 	import { base } from '$app/paths';
@@ -11,8 +11,6 @@
 	$: {
 		if ($page) {
 			currentRoute = $page.url.pathname;
-
-			// console.log(currentRoute);
 		}
 	}
 
@@ -20,7 +18,6 @@
 		{ title: NavBar.skills, to: '/skills', icon: 'i-carbon-software-resource-cluster' },
 		{ title: NavBar.personal, to: '/projects', icon: 'i-carbon-cube' },
 		{ title: NavBar.career, to: '/experience', icon: 'i-carbon-development' },
-		{ title: NavBar.resume, to: '/resume', icon: 'i-carbon-result' }
 	];
 </script>
 
@@ -31,7 +28,7 @@
 			class="nav-menu-left decoration-none flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
 			<UIcon icon="i-carbon-code" classes="text-2em" />
-			<span class="ml-2 text-md font-bold hidden md:inline">{HOME.name} {HOME.lastName}</span>
+			<span class="ml-2 text-md font-bold hidden md:inline">Andy NG</span>
 		</a>
 		<div class="flex flex-row flex-1 self-center justify-center">
 			{#each items as item}
@@ -42,12 +39,6 @@
 			{/each}
 		</div>
 		<div class="flex flex-row self-stretch items-stretch gap-1 text-1.15em">
-			<a
-				href={`${base}/search`}
-				class="text-inherit col-center self-stretch px-2 hover:bg-[color:var(--main-hover)]"
-			>
-				<UIcon icon="i-carbon-search" />
-			</a>
 			<button
 				class="bg-transparent text-1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
 				on:click={() => toggleTheme()}

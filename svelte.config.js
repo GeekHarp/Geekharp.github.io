@@ -10,7 +10,7 @@ const config = {
 	preprocess: vitePreprocess(),
 	vitePlugin: {
 		inspector: {
-			showToggleButton: 'always'
+			showToggleButton: 'never'
 		}
 	},
 

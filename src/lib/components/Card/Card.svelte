@@ -9,7 +9,7 @@
 	export let margin = '0px';
 	export let tiltDegree = 5;
 	export let classes: Array<string> = [];
-	export let href: undefined | string = undefined;
+	// export let href: undefined | string = undefined;
 	export let bgImg: string | undefined = undefined;
 
 	$: borderColor = changeColorOpacity(color, 0.5);
@@ -60,8 +60,7 @@
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <svelte:element
-	this={href ? 'a' : 'div'}
-	{href}
+	this='div'
 	bind:this={el}
 	on:mousemove={onHover}
 	class={`card text-inherit decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative ${classes.join(
