@@ -46,7 +46,7 @@ export const HOME: HomePageParams = {
 	name: 'Name',
 	lastName: 'LASTNAME',
 	description:
-		'Hello there, I am Andy. A Senior Web Developer with an Engineering background. I have experience in building reliable web applications using various frameworks and technologies. I enjoy learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges to grow as a developer.',
+		'Hello there, I am Andy, a Senior Web Developer with an Engineering background. I have extensive experience in building reliable web applications using a variety of frameworks and technologies, including React, Node.js, etc. I have a strong enthusiasm for acquiring new skills. I am passionate about creating high-quality code that adheres to best practices and industry standards. I am continuously seeking new challenges to further my growth as a developer.',
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/geekHarp' },
 		{
